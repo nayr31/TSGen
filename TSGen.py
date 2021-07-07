@@ -9,7 +9,7 @@ print("Working in " + home_dir)
 with open("manifest_template.json", "r+") as f:
     json_data = json.load(f)
 
-json_data["name"] = input("Please input your mod name: ")
+json_data["name"] = input("Please input your mod name: ").replace(" ", "_")
 json_data["version_number"] = input("Please input your version number (x.x.x): ")
 json_data["website_url"] = input("Website url? You can leave this blank: ")
 json_data["description"] = input("Write a short description of your mod: ")
