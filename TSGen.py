@@ -51,7 +51,7 @@ os.chdir(path)
 
 print("Attempting to write...")
 with open("manifest.json", "w+") as f:
-    json.dump(json_data, f)
+    json.dump(json_data, f, indent=2)
 with open("README.md", "w+") as outfile:
     outfile.write("# " + json_data["name"] + "\n\n")
     outfile.write(long_desc)
