@@ -2,6 +2,8 @@
 
 This program aims to deal with the biggest problem in Thunderstore migration: creating correct compatible files for uploading. The main problems are incorrect manifests, icon sizes, and not having a readme file.
 
+This project was made possible by [`auto-py-to-exe`](https://pypi.org/project/auto-py-to-exe/).
+
 ## Installation:
 Extract the `.zip` release file into a folder somewhere on your computer so that the `TSGen.exe` file is outside of a `.zip`.
 ```
@@ -12,6 +14,8 @@ C:/
                 TSGen/
                     TSGen.exe
 ```
+
+Windows Defender is known to yell at this program. You can check through the ***only*** code in the project [`TSGen.py`](https://github.com/nayr31/TSGen/blob/main/TSGen.py) to verify that the code only creates a folder and some files, taking user information.
 
 ## Usage
 After installation, run the `TSGen.exe` file. A command window should appear:
