@@ -4,7 +4,7 @@ home_dir = os.getcwd()
 
 print("Working in " + home_dir)
 
-#print("Loading manifest template...")
+print("Loading manifest template...\n")
 with open("manifest_template.json", "r+") as f:
     json_data = json.load(f)
 
@@ -30,14 +30,16 @@ print(str(dep_pos + 1) + " - [Stop listing dependencies]")
 
 dependency_list = []
 while True:
-    dep_input = input("\nInput number: ")
-
+    dep_input = int(input("\nInput number: "))
+    
     if dep_input < len(json_dependencies["dependency-name"]):
-        print("Adding " + json_dependencies["dependency-name"][dep_input] + "(" + json_dependencies["dependency-tag"] + ")")
+        print("Adding " + json_dependencies["dependency-name"][dep_input] + " (" + json_dependencies["dependency-tag"][dep_input] + ")")
         dependency_list.append(json_dependencies["dependency-tag"][dep_input])
     elif dep_input == len(json_dependencies["dependency-name"]):
         print("Stopping dependency list...")
         break
+    else:
+        print("That wasn't a valid number from the list, only type the number.")
 json_data["dependencies"] = dependency_list
 
 print("Making folder...")
