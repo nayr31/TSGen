@@ -56,3 +56,13 @@ with open("README.md", "w+") as outfile:
 src = os.path.join(home_dir, "icon_template.png")
 dst = os.path.join(path, "icon.png")
 shutil.copyfile(src, dst)
+
+print("\nYour mod files have been copied to " + os.getcwd() + ".")
+print("Please change the icon to something custom, modify the README file to add pictures or formatting.")
+
+print("\nINSTALLATION:")
+print("Add the generated files to a zip file, along with your mod files.")
+print("Anything that goes into the BepInEx/plugins folder (.deli, .dll) can be directly added to the zip file.")
+print("Sideloader mods need to be placed into a folder inside of your zip \"MyMod/Sideloader\"")
+print("Legacy assetbundle support is purely manual, and should not be uploaded to Thunderstore.")
+input()
