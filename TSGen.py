@@ -1,4 +1,4 @@
-import os, json, shutil
+import os, json, shutil, requests
 
 home_dir = os.getcwd()
 
@@ -15,6 +15,17 @@ json_data["description"] = input("Write a short description of your mod: ")
 long_desc = input("Input a long description of your mod (this will be displayed on the main page):\n")
 
 print("\nLoading Dependency list...")
+
+if(os.path.exists(os.path.join(os.getcwd(), "Dependencies.json")) == False):
+    try:
+        dep_url = "https://raw.githubusercontent.com/nayr31/TSGen/main/Dependencies.json"
+        dep_file = requests.get(dep_url, stream=True)
+        with open("Dependencies.json", "wb") as f:
+            f.write(dep_file.content)
+    except:
+        print("There was an error downloading/writing the Dependency file.\nPlease run TSGen as admin or download the file manually from the github page.")
+        input()
+        exit
 
 with open("Dependencies.json", "r+") as f:
     json_dependencies = json.load(f)
@@ -63,6 +74,6 @@ print("Please change the icon to something custom, modify the README file to add
 print("\nINSTALLATION:")
 print("Add the generated files to a zip file, along with your mod files.")
 print("Anything that goes into the BepInEx/plugins folder (.deli, .dll) can be directly added to the zip file.")
-print("Sideloader mods need to be placed into a folder inside of your zip \"MyMod/Sideloader\"")
+print("Sideloader mods need to be placed into the Sideloader folder inside of your zip \"MyMod.zip/Sideloader\"")
 print("Legacy assetbundle support is purely manual, and should not be uploaded to Thunderstore.")
 input()
