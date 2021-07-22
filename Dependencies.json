@@ -1,5 +1,5 @@
 {
-  "version": 1.4,
+  "version": 1.41,
   "dependency-name": [
     "BepInEx",
     "Deli",
@@ -12,7 +12,7 @@
   ],
   "dependency-tag": [
     "BepInEx-BepInExPack_H3VR-5.4.1101",
-    "DeliCollective-Deli-0.4.1",
+    "DeliCollective-Deli-0.4.2",
     "devyndamonster-OtherLoader-0.3.0",
     "nrgill28-Sodalite-1.0.0",
     "denikson-H3VR_Sideloader-0.3.7",
