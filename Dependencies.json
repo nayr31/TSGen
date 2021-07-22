@@ -7,7 +7,8 @@
     "Sodalite",
     "Sideloader",
     "H3VRUtilities",
-    "Wurstmod"
+    "Wurstmod",
+    "TnHTweaker"
   ],
   "dependency-tag": [
     "BepInEx-BepInExPack_H3VR-5.4.1101",
@@ -16,6 +17,7 @@
     "nrgill28-Sodalite-1.0.0",
     "denikson-H3VR_Sideloader-0.3.7",
     "WFIOST-H3VRUtilities-8.0.3",
-    "nrgill28-WurstMod-2.2.1"
+    "nrgill28-WurstMod-2.2.1",
+    "devyndamonster-TakeAndHoldTweaker-1.6.7"
   ]
 }
