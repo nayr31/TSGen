@@ -4,6 +4,8 @@ This program aims to deal with the biggest problem in Thunderstore migration: cr
 
 This project was made possible by [`auto-py-to-exe`](https://pypi.org/project/auto-py-to-exe/).
 
+[Please read this document on how to package your mod for upload.](https://github.com/nayr31/H3VR-Modding-Help/blob/main/Thunderstore-Packaging.md)
+
 ## Installation:
 Extract the `.zip` release file into a folder somewhere on your computer so that the `TSGen.exe` file is outside of a `.zip`.
 ```
