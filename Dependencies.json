@@ -1,5 +1,5 @@
 {
-  "version": 1.51,
+  "version": 1.52,
   "dependency-name": [
     "BepInEx",
     "Deli",
@@ -9,8 +9,7 @@
     "H3VRUtilities",
     "Wurstmod",
     "TnHTweaker",
-    "Monomod",
-    "Hookgen Patcher"
+    "Monomod"
   ],
   "dependency-tag": [
     "BepInEx-BepInExPack_H3VR-5.4.1101",
@@ -21,7 +20,6 @@
     "WFIOST-H3VRUtilities-8.0.3",
     "nrgill28-WurstMod-2.2.1",
     "devyndamonster-TakeAndHoldTweaker-1.6.7",
-    "BepInEx-MonoMod_Loader-1.0.0",
-    "nrgill28-HookGenPatcher_H3VR-1.2.3"
+    "BepInEx-MonoMod_Loader-1.0.0"
   ]
 }
