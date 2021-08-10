@@ -1,5 +1,5 @@
 {
-  "version": 1.53,
+  "version": 1.54,
   "dependency-name": [
     "BepInEx",
     "Deli",
@@ -10,7 +10,8 @@
     "Wurstmod",
     "TnHTweaker",
     "Monomod",
-    "Hookgen Patcher"
+    "Hookgen Patcher",
+    "Potatoes TnH Music Loader"
   ],
   "dependency-tag": [
     "BepInEx-BepInExPack_H3VR-5.4.1101",
@@ -22,6 +23,7 @@
     "nrgill28-WurstMod-2.2.1",
     "devyndamonster-TakeAndHoldTweaker-1.6.7",
     "BepInEx-MonoMod_Loader-1.0.0",
-    "nrgill28-HookGenPatcher_H3VR-1.2.3"
+    "nrgill28-HookGenPatcher_H3VR-1.2.3",
+    "Potatoes-Potatoes_TNH_BGM_Loader-1.0.0"
   ]
 }
