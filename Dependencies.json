@@ -1,5 +1,5 @@
 {
-  "version": 1.54,
+  "version": 1.6,
   "dependency-name": [
     "BepInEx",
     "Deli",
@@ -11,7 +11,8 @@
     "TnHTweaker",
     "Monomod",
     "Hookgen Patcher",
-    "Potatoes TnH Music Loader"
+    "Potatoes TnH Music Loader",
+    "OpenScripts"
   ],
   "dependency-tag": [
     "BepInEx-BepInExPack_H3VR-5.4.1101",
@@ -24,6 +25,7 @@
     "devyndamonster-TakeAndHoldTweaker-1.6.7",
     "BepInEx-MonoMod_Loader-1.0.0",
     "nrgill28-HookGenPatcher_H3VR-1.2.3",
-    "Potatoes-Potatoes_TNH_BGM_Loader-1.0.0"
+    "Potatoes-Potatoes_TNH_BGM_Loader-1.0.0",
+    "cityrobo-OpenScripts-1.1.3"
   ]
 }
